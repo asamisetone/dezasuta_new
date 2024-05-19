@@ -6,6 +6,7 @@
   display: flex;
   justify-content: space-between;
 }
+
 .box-blue {
   width: 300px;
   height: 300px;
@@ -20,6 +21,7 @@
   flex-wrap: wrap;
   gap: 30px;
 }
+
 .box-red {
   width: 30%;
   height: 300px;
