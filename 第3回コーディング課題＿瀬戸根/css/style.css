@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+h1 {
+  padding: 20px 0 0 0;
+  text-align: center;
+  color: #219a88c8;
+  font-size: 25px;
+}
+
+h2 {
+  margin: 10px;
+  padding: 0 0 0 3px;
+  color: #219a88c8;
+  font-size: 20px;
+  border-left: 8px solid #219a88c8;
+}
+
+p {
+  margin: 6px;
+}
+.contener {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #eeeeee;
+}
+
+.contener2 {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.box {
+  background-color: white;
+}
+
+@media screen and (max-width: 400px) {
+  .contener2 {
+    flex-direction: column;
+  }
+  img {
+    width: 100%;
+  }
+}
