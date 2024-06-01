@@ -1,0 +1,137 @@
+@charset "utf-8";
+
+body {
+  background: #e8d9bf;
+}
+
+header {
+  position: relative;
+}
+
+.header_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 3%;
+  padding-right: 7%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.header_logo {
+  width: 226px;
+}
+
+.pc_nav ul {
+  display: flex;
+  gap: 55px;
+}
+
+.pc_nav ul li {
+  width: 105px;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+}
+
+#catch_copy {
+  max-width: 1000px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 105px;
+}
+.catch_copy_1 {
+  font-size: 30px;
+  margin-bottom: 60px;
+}
+.catch_copy_2 {
+  font-size: 82px;
+  line-height: 1.1;
+  letter-spacing: 0.1em;
+  margin-bottom: 40px;
+}
+.catch_copy_3 {
+  font-size: 23px;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  margin-bottom: 100px;
+}
+
+/*ABOUT*/
+
+#about {
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.about_img {
+  width: 500px;
+  height: 560px;
+  margin: 0 86px 0 0;
+}
+.about_img img {
+  width: 100%;
+  height: 100%;
+  border-bottom-right-radius: 82px;
+  object-fit: cover;
+}
+.about_textbox img {
+  width: 272px;
+  margin-bottom: 57px;
+}
+.about_text_1 {
+  font-size: 44px;
+  line-height: 1.4;
+  margin-bottom: 41px;
+}
+.about_text_2 {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/*MENU*/
+
+.menu_tittle {
+  text-align: center;
+  margin: 105px 0 47px 0;
+}
+.menu_list {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+}
+.menu_images img {
+  width: 300px;
+  height: 200px;
+  border-top-right-radius: 41px;
+}
+h3 {
+  font-size: 38px;
+  line-height: 0.57;
+  color: #d30202;
+  margin-bottom: 24px;
+}
+
+/*GALLERY*/
+
+#gallery {
+  text-align: center;
+}
+.gallery_tittle img {
+  margin: 100px 0 16px 0;
+}
+.gallery_photo {
+  display: flex;
+  justify-content: center;
+}
+.gallery_photo img {
+  width: 20%;
+}
