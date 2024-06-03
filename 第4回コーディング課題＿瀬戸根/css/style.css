@@ -1,7 +1,8 @@
 @charset "utf-8";
 
-body {
+main {
   background: #e8d9bf;
+  padding: 104px;
 }
 
 header {
@@ -41,11 +42,15 @@ header {
     "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
 }
 
-#catch_copy {
+.contener {
   max-width: 1000px;
+}
+
+/*catch_copy*/
+
+#catch_copy {
   text-align: center;
   margin: 0 auto;
-  margin-top: 105px;
 }
 .catch_copy_1 {
   font-size: 30px;
@@ -67,7 +72,6 @@ header {
 /*ABOUT*/
 
 #about {
-  max-width: 1000px;
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -83,25 +87,32 @@ header {
   border-bottom-right-radius: 82px;
   object-fit: cover;
 }
+.about_textbox {
+  width: 40%;
+}
 .about_textbox img {
   width: 272px;
   margin-bottom: 57px;
 }
-.about_text_1 {
+.about_textbox p:nth-of-type(1) {
   font-size: 44px;
   line-height: 1.4;
   margin-bottom: 41px;
 }
-.about_text_2 {
+.about_textbox p:nth-of-type(2) {
   font-size: 16px;
   line-height: 1.6;
 }
 
 /*MENU*/
-
+#menu {
+  justify-content: center;
+  margin: 0 auto;
+}
 .menu_tittle {
   text-align: center;
-  margin: 105px 0 47px 0;
+  width: 151px;
+  margin: 105px auto 47px auto;
 }
 .menu_list {
   display: flex;
@@ -110,7 +121,6 @@ header {
 }
 .menu_images img {
   width: 300px;
-  height: 200px;
   border-top-right-radius: 41px;
 }
 h3 {
@@ -126,7 +136,8 @@ h3 {
   text-align: center;
 }
 .gallery_tittle img {
-  margin: 100px 0 16px 0;
+  width: 245px;
+  margin: 100px auto 16px auto;
 }
 .gallery_photo {
   display: flex;
@@ -134,4 +145,77 @@ h3 {
 }
 .gallery_photo img {
   width: 20%;
+}
+
+/*EVENT*/
+
+#event {
+  justify-content: center;
+  margin: 0 auto;
+}
+.event_tittle {
+  text-align: center;
+  width: 173px;
+  margin: 23px auto 34px auto;
+}
+.event_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  height: 200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border: 3.68px solid #4f260b;
+  font-size: 23px;
+}
+.event_box li {
+  margin: 23px;
+}
+.event_news {
+  margin-left: 55px;
+}
+.event_news li {
+  text-decoration: underline #4f260b;
+  text-align: left;
+}
+
+/*access*/
+
+.access_tittle {
+  text-align: center;
+  width: 213px;
+  margin: 78px auto 44px auto;
+}
+.access_map iframe {
+  width: 100%;
+  height: 470px;
+  display: block;
+}
+
+/*footer*/
+
+#footer {
+  display: flex;
+  justify-content: left;
+  margin: 77px auto 74px auto;
+}
+.footer_tittle {
+  width: 226px;
+  margin-right: 66px;
+}
+.footer_info p {
+  font-size: 20px;
+  line-height: 1.95;
+}
+.copy {
+  text-align: center;
+  margin: 77px auto 77px auto;
+}
+
+.pagetop {
+  position: fixed;
+  width: 125px;
+  bottom: 40px;
+  right: 40px;
 }
