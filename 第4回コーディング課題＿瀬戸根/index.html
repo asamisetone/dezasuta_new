@@ -7,13 +7,18 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
     <header>
         <div id="header" class="header_slider">
             <div>
-                <img src="./images/pc_first-100.jpg" alt="店内の様子">
+                <picture>
+                    <source srcset="images/sp_main_vs@2x-100.jpg" media="(
+                        max-width: 767px)">
+                    <img src="./images/pc_first-100.jpg" alt="店内の様子">
+                </picture>
             </div>
         </div>
         <div class="header_wrap">
@@ -21,6 +26,18 @@
                 <img src="./images/design_cafe_logo_header@2x.png" alt="design_cafe">
             </h1>
             <nav class="pc_nav">
+                <ul>
+                    <li><a href="#about">ABOUT US</a></li>
+                    <li><a href="#menu">MENU</a></li>
+                    <li><a href="#gallery">GALLERYS</a></li>
+                    <li><a href="#event">EVENT</a></li>
+                    <li><a href="#access">ACCESS</a></li>
+                </ul>
+            </nav>
+            <div class="sp_btn">
+                <span></span>
+            </div>
+            <nav class="sp_nav">
                 <ul>
                     <li><a href="#about">ABOUT US</a></li>
                     <li><a href="#menu">MENU</a></li>
@@ -43,7 +60,11 @@
 
         <section id="about" class="contener">
             <div class="about_img">
-                <img src="./images/pc_about-100.jpg" alt="about">
+                <picture>
+                    <source srcset="images/about_us@2x-100.jpg" media="(
+                        max-width: 767px)">
+                    <img src="./images/pc_about-100.jpg" alt="about">
+                </picture>
             </div>
             <div class="about_textbox">
                 <img src="./images/about_us@2x.png" alt="ABOUT US">
@@ -171,6 +192,14 @@
         </a>
     </div>
 
+    <script>
+        $(function () {
+            $(".sp_btn").on("click", function () {
+                $(".sp_nav").fadeToggle();
+                $(".sp_btn").toggleClass("open");
+            })
+        })
+    </script>
 </body>
 
 </html>
