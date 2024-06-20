@@ -67,6 +67,9 @@ header {
   letter-spacing: 0.1em;
   margin-bottom: 100px;
 }
+.catch_copy_3 br {
+  display: none;
+}
 
 /*ABOUT*/
 
@@ -177,11 +180,10 @@ h3 {
 }
 .event_box li {
   margin: 23px;
+  display: flex;
 }
 .event_news {
   margin-left: 55px;
-}
-.event_news li {
   text-decoration: underline #4f260b;
   text-align: left;
 }
@@ -346,6 +348,9 @@ h3 {
     margin: 0 10px 0 10px;
     margin: 0 auto;
   }
+  .catch_copy_3 br {
+    display: inline;
+  }
   /*ABOUT*/
   .contener {
     flex-direction: column;
@@ -393,10 +398,13 @@ h3 {
   /*EVENT*/
   #event li {
     font-size: 16px;
-  }
-  .event_box {
     flex-direction: column;
+    text-align: left;
   }
+  .event_news {
+    margin-left: 0;
+  }
+
   /*footer*/
   #footer {
     flex-direction: column;
